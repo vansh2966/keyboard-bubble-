@@ -1,3 +1,5 @@
+<img width="1131" height="1600" alt="WhatsApp Image 2026-05-26 at 5 42 51 PM" src="https://github.com/user-attachments/assets/b22113cd-2c3b-4733-bf03-fac4ffb79f57" />
+
 well story behind is that i was always wanted mechanical keyboards, that cool looking keyboards with crazy 
 lighting effects and keycaps. so i thought why not make one myself. so started it, did some research, components 
 and everything related to it
