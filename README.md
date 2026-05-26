@@ -27,9 +27,16 @@ it was worth it
 | **Slide Switch (3-Pin)** | 1 | ₹100 | [Amazon Link](https://www.amazon.in/gp/product/B0D33BLGBB/) |
 | **Mechanical Switches (Kailh Red)** | 70 | ₹1,260 | [Cosmic Byte Link](https://www.thecosmicbyte.com/product/kailh-mechanical-switches-for-swappable-keyboards-pack-of-10/) |
 | **Kailh MX Hotswap Sockets** | 70 | ₹870 | [Neomacro Link](https://neomacro.in/products/kailh-mx-hotswap-socket) |
-| **Diodes (1N4148W-TP)** | 100 | ₹1,944 | [DigiKey Link](https://www.digikey.in/en/products/detail/mcc-micro-commercial-components/1N4148W-TP/717196) |
+| **Diodes (1N4148W)** | 100 | ₹1,944 | [DigiKey Link](https://www.digikey.in/en/products/detail/mcc-micro-commercial-components/1N4148W-TP/717196) |
 | **Stabilizers (PCB Mount)** | 1 | ₹2,400 | [Amazon Link](https://www.amazon.in/gp/product/B07K8HP6KC/) |
-| **Keycaps Set** | 1 | ₹5,335 | [Amazon Link](https://www.amazon.in/gp/product/B0FS27BG38/) |
+| **Keycaps** | 1 | ₹5,335 | [Amazon Link](https://www.amazon.in/gp/product/B0FS27BG38/) |
 | **LEDs (SK6812 Mini-E Reverse)** | 100 | ₹6,310 | [Amazon Link](https://www.amazon.in/gp/product/B0D5LGQ629/) |
-| **Decoupling Capacitors (0402)** | 100 | ₹100 | [Robu Link](https://robu.in/product/1uf-capacitor-smdc-0402-pack-of-50/) |
-| **Transistor / TVS Diode (SM712)** | 1 | ₹28 | [DigiKey Link](https://www.digikey.in/en/products/detail/smc-diode-solutions/SM712/11542152) |
+| **Decoupling Capacitors** | 100 | ₹100 | [Robu Link](https://robu.in/product/1uf-capacitor-smdc-0402-pack-of-50/) |
+| **Transistor (SM712 TVS)** | 1 | ₹28 | [DigiKey Link](https://www.digikey.in/en/products/detail/smc-diode-solutions/SM712/16584910) |
+| **PCB Fabrication** | 1 | ₹5,918 | [JLCPCB Link](https://jlcpcb.com) |
+| **3D Printing Service** | 2 | ₹1,729 | [Robu Link](https://robu.in/product/3d-printing-service1/) |
+| **Resistors** | 2 | Already have it | - |
+| **Mini Hot Plate (Soldering)** | 1 | ₹2,396 | [Amazon Link](https://www.amazon.in/Preheating-Soldering-Preheater-Platform-56x56x35mm/dp/B0C7W3W8C4/) |
+| **Miscellaneous** | - | ₹1,000 | - |
+| ─── | ─── | ─── | ─── |
+| **TOTAL COST** | **-** | **₹32,087 ($336 USD)** | **Fully Sourced** |
