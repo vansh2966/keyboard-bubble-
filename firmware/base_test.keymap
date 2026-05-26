@@ -1,0 +1,50 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    // 1. Tell ZMK which physical pins are your Rows and Columns
+    kscan0: kscan {
+        compatible = "zmk,kscan-gpio-matrix";
+        diode-direction = "col2row"; // Assumes your SOD-123 diodes point from Col to Row
+
+        row-gpios
+            = <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row 0 is Pin D0
+            , <&xiao_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row 1 is Pin D1
+            ;
+
+        col-gpios
+            = <&xiao_d 2 GPIO_ACTIVE_HIGH> // Column 0 is Pin D2
+            , <&xiao_d 3 GPIO_ACTIVE_HIGH> // Column 1 is Pin D3
+            ;
+    };
+
+    // 2. Map the electronic grid intersections into a linear sequence
+    default_transform: matrix_transform {
+        compatible = "zmk,matrix-transform";
+        rows = <2>;
+        columns = <2>;
+
+        map = <
+            RC(0,0) RC(0,1)  // Row 0, Col 0  |  Row 0, Col 1
+            RC(1,0) RC(1,1)  // Row 1, Col 0  |  Row 1, Col 1
+        >;
+    };
+
+    // 3. Assign standard HID keyboard characters to those intersections
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                &kp A    &kp B
+                &kp C    &kp D
+            >;
+        };
+    };
+
+    // Link the hardware definitions to the system core
+    chosen {
+        zmk,kscan = &kscan0;
+        zmk,matrix_transform = &default_transform;
+    };
+};
