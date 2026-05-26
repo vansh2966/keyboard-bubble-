@@ -10,7 +10,7 @@ all key anti ghost, with 65% layout and 68 keys which u can assign anything and 
 
 
 <img width="639" height="288" alt="baseee" src="https://github.com/user-attachments/assets/9d9e54e9-c4ff-44cc-967e-f91d287f3671" />
-the base of the keyboard. i wanted it look premium so i made the thick bezels
+the base of the keyboard. i wanted it look premium so i made the thick bezels, u can mount the pcb and plate with screws
 
 <img width="579" height="255" alt="complete" src="https://github.com/user-attachments/assets/51d5850c-fcd9-4fcf-b256-e980da452bc9" />
 this all together looks with brown and black keys. maybe i will change it later if i want 
