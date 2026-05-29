@@ -44,4 +44,4 @@ it was worth it
 | **Mini Hot Plate (Soldering)** | 1 | ₹2,556 | [Amazon Link](https://www.amazon.in/Preheating-Soldering-Preheater-Platform-56x56x35mm/dp/B0C7W3W8C4/) |
 | **Miscellaneous** | - | ₹1,000 | - |
 | ─── | ─── | ─── | ─── |
-| **TOTAL COST** | **-** | **₹32,247 ($336 USD)** | **Fully Sourced** |
+| **TOTAL COST** | **-** | **₹32,247 ($337 USD)** | **Fully Sourced** |
