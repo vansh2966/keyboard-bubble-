@@ -41,7 +41,7 @@ it was worth it
 | **PCB Fabrication** | 1 | ₹5,918 | [JLCPCB Link](https://jlcpcb.com) |
 | **3D Printing Service** | 2 | ₹1,729 | [Robu Link](https://robu.in/product/3d-printing-service1/) |
 | **Resistors** | 2 | Already have it | - |
-| **Mini Hot Plate (Soldering)** | 1 | ₹2,396 | [Amazon Link](https://www.amazon.in/Preheating-Soldering-Preheater-Platform-56x56x35mm/dp/B0C7W3W8C4/) |
+| **Mini Hot Plate (Soldering)** | 1 | ₹2,556 | [Amazon Link](https://www.amazon.in/Preheating-Soldering-Preheater-Platform-56x56x35mm/dp/B0C7W3W8C4/) |
 | **Miscellaneous** | - | ₹1,000 | - |
 | ─── | ─── | ─── | ─── |
-| **TOTAL COST** | **-** | **₹32,087 ($336 USD)** | **Fully Sourced** |
+| **TOTAL COST** | **-** | **₹32,247 ($336 USD)** | **Fully Sourced** |
