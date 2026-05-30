@@ -8,12 +8,16 @@ it a keyboard that helps u write with per key rgb which u can control and create
 u can use it wired or wireless, with hotswappable keys. u can just change the type of keys if u wnat. 
 all key anti ghost, with 65% layout and 68 keys which u can assign anything and also create macros.
 
+in the base there highted screw holes, first u put the the stabalizers in the PCB then place the PCB on the heighted holes then the plate and screw it up with 4 m2 screws. if u want u can add a foam layer between
+the PCB and the plate. and in the end u can add the keycaps.
 
 <img width="639" height="288" alt="baseee" src="https://github.com/user-attachments/assets/9d9e54e9-c4ff-44cc-967e-f91d287f3671" />
 
 the base of the keyboard. i wanted it look premium so i made the thick bezels, u can mount the pcb and plate with screws
 
 <img width="579" height="255" alt="complete" src="https://github.com/user-attachments/assets/51d5850c-fcd9-4fcf-b256-e980da452bc9" />
+<img width="3300" height="2550" alt="01c86346-6927-4eaa-a679-221856ce278c" src="https://github.com/user-attachments/assets/5ef69c84-ded8-4b94-9d04-4970adaa9aac" />
+
 
 this all together looks with brown and black keys. maybe i will change it later if i want 
 
