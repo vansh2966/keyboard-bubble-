@@ -23,6 +23,10 @@ this all together looks with brown and black keys. maybe i will change it later 
 
 
 <img width="600" height="270" alt="bin" src="https://github.com/user-attachments/assets/b14b8486-c884-4fdb-9701-98f75ac60404" />
+<img width="668" height="302" alt="pcb" src="https://github.com/user-attachments/assets/766a61a6-694c-4d09-bc08-58968237c306" />
+<img width="663" height="305" alt="pcb back" src="https://github.com/user-attachments/assets/466ada93-1447-4264-a60b-2665b2c6a178" />
+
+
 
 the PCB  tool all of times, the scematics routing, fixing small errors and getting tons of errors in DRC. but in the end 
 it was worth it 
