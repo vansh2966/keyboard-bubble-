@@ -1,4 +1,6 @@
-<img width="1131" height="1600" alt="WhatsApp Image 2026-05-26 at 5 42 51 PM" src="https://github.com/user-attachments/assets/b22113cd-2c3b-4733-bf03-fac4ffb79f57" />
+<img width="1131" height="1600" alt="7f61cbfa-4ac8-4967-8ea2-0870169b700c" src="https://github.com/user-attachments/assets/bf52c410-6ba1-4b87-8a7b-fa6ea84898dd" />
+
+
 
 well story behind is that i was always wanted mechanical keyboards, that cool looking keyboards with crazy 
 lighting effects and keycaps. so i thought why not make one myself, i will learn lot new things, desgin my first PCB and also get myself my own custom keyboard. so started it, did some research, components 
