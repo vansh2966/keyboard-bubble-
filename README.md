@@ -52,6 +52,7 @@ it was worth it
 | **3D Printing Service** | 2 | ₹1,729 | [Robu Link](https://robu.in/product/3d-printing-service1/) |
 | **Resistors** | 2 | Already have it | - |
 | **Mini Hot Plate (Soldering)** | 1 | ₹2,556 | [Amazon Link](https://www.amazon.in/Preheating-Soldering-Preheater-Platform-56x56x35mm/dp/B0C7W3W8C4/) |
+| **Soldering paste** | 1 | ₹399 | [Amazon link](https://www.amazon.in/gp/product/B0DL4K4WWQ/ref=ox_sc_act_title_1?smid=A28W8MJHJ0JA2F&psc=1) | 
 | **Miscellaneous** | - | ₹1,000 | - |
 | ─── | ─── | ─── | ─── |
 | **TOTAL COST** | **-** | **₹32,247 ($337 USD)** | **Fully Sourced** |
