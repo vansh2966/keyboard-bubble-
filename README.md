@@ -1,5 +1,6 @@
 <img width="2480" height="3508" alt="zine_page-0001" src="https://github.com/user-attachments/assets/ee454ce2-b436-4d41-b720-a4c2a6778e6c" />
 
+**Zine page is not AI, keyboard image is rendered, PCB image is SS, but i changed it color. i have eveything myself in canva. no AI**
 
 
 well story behind is that i was always wanted mechanical keyboards, that cool looking keyboards with crazy 
