@@ -51,7 +51,7 @@ it was worth it
 | **PCB Fabrication** | 1 | ₹5,918 | [JLCPCB Link](https://jlcpcb.com) |
 | **3D Printing Service** | 2 | ₹1,729 | [Robu Link](https://robu.in/product/3d-printing-service1/) |
 | **Resistors** | 2 | Already have it | - |
-| **Mini Hot Plate (Soldering)** | 1 | ₹2,556 | [Amazon Link](https://www.amazon.in/Preheating-Soldering-Preheater-Platform-56x56x35mm/dp/B0C7W3W8C4/) |
+| **2 in 1 Hot Wind Gun Solder Iron SMD Rework Soldering Station ** | 1 | ₹4391 | [Amazon Link](https://www.amazon.in/gp/product/B0F4QYBK7Y/ref=ox_sc_act_title_1?smid=A3T8K809Q96RB6&psc=1) |
 | **Soldering paste** | 1 | ₹399 | [Amazon link](https://www.amazon.in/gp/product/B0DL4K4WWQ/ref=ox_sc_act_title_1?smid=A28W8MJHJ0JA2F&psc=1) | 
 | **Miscellaneous** | - | ₹1,000 | - |
 | ─── | ─── | ─── | ─── |
