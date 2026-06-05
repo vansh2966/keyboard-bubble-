@@ -13,6 +13,25 @@ all key anti ghost, with 65% layout and 68 keys which u can assign anything and 
 in the base there highted screw holes, first u put the the stabalizers in the PCB then place the PCB on the heighted holes then the plate and screw it up with 4 m2 screws. if u want u can add a foam layer between
 the PCB and the plate. and in the end u can add the keycaps.
 
+**How to Build it**
+- get all the matrials including 3d printed parts
+- soldering all the things in PCB
+- place your PCB in case aliging with the screw holes
+- place your plate on top that, u can also palce foam btween plate and pcb.
+- screw up all 4 screws
+- take keys your keys and stick them
+- put your keycaps on the top
+- take your microcontroller and plug it in
+- make sure its in bootloader mode
+- take the firmware files and put them in the chip
+- ready to use it
+
+**How to use it**
+- u can use it wired or wireselly
+- connect it ur computer using cable or bluthooth
+- start typing
+
+
 <img width="639" height="288" alt="baseee" src="https://github.com/user-attachments/assets/9d9e54e9-c4ff-44cc-967e-f91d287f3671" />
 
 the base of the keyboard. i wanted it look premium so i made the thick bezels, u can mount the pcb and plate with screws
