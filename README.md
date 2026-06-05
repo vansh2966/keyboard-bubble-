@@ -75,4 +75,4 @@ it was worth it
 | **Soldering paste** | 1 | ₹399 | [Amazon link](https://www.amazon.in/gp/product/B0DL4K4WWQ/ref=ox_sc_act_title_1?smid=A28W8MJHJ0JA2F&psc=1) | 
 | **Miscellaneous** | - | ₹1,000 | - |
 | ─── | ─── | ─── | ─── |
-| **TOTAL COST** | **-** | **₹32,646 ($342 USD)** | **Fully Sourced** |
+| **TOTAL COST** | **-** | **₹34,482 ($361 USD)** | **Fully Sourced** |
