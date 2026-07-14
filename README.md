@@ -52,7 +52,11 @@ this all together looks with brown and black keys. maybe i will change it later 
 
 
 the PCB  tool all of times, the scematics routing, fixing small errors and getting tons of errors in DRC. but in the end 
-it was worth it 
+it was worth it
+
+i updated the CAD file and made a new design. fixed few error that learned after ordering the old one. not muhc much of a change but ig its better and also looks better
+<img width="1735" height="777" alt="image" src="https://github.com/user-attachments/assets/7ce46431-b908-4160-b87b-c0130dcc2704" />
+
 
 ## 📦 Bill of Materials (BOM)
 
