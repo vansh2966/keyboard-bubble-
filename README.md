@@ -37,7 +37,7 @@ the PCB and the plate. and in the end u can add the keycaps.
 the base of the keyboard. i wanted it look premium so i made the thick bezels, u can mount the pcb and plate with screws
 
 <img width="579" height="255" alt="complete" src="https://github.com/user-attachments/assets/51d5850c-fcd9-4fcf-b256-e980da452bc9" />
-<img width="3300" height="2550" alt="01c86346-6927-4eaa-a679-221856ce278c" src="https://github.com/user-attachments/assets/5ef69c84-ded8-4b94-9d04-4970adaa9aac" />
+<img width="1600" height="902" alt="WhatsApp Image 2026-07-14 at 11 50 17 PM" src="https://github.com/user-attachments/assets/dd9e1171-8781-464e-98b6-37af8685d876" />
 
 
 this all together looks with brown and black keys. maybe i will change it later if i want 
