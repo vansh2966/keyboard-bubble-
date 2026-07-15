@@ -1,61 +1,110 @@
-// This file configures the hardware matrix layer for your custom 68-key layout
+// This file configures the hardware matrix layer for your custom 67-key layout
 #include <dt-bindings/zmk/matrix_transform.h>
-
+#include <dt-bindings/led/led.h>
 #include "bingo-layouts.dtsi"
+
+&pinctrl {
+    spi3_default: spi3_default {
+        group1 {
+            // LED connected to D17, which is P1.03
+            psels = <NRF_PSEL(SPIM_MOSI, 1, 3)>;
+            nordic,drive-mode = <NRF_DRIVE_H0H1>;
+        };
+    };
+    spi3_sleep: spi3_sleep {
+        group1 {
+            // MUST MATCH the pin above
+            psels = <NRF_PSEL(SPIM_MOSI, 1, 3)>;
+            low-power-enable;
+        };
+    };
+};
+
+&spi3 {
+    compatible = "nordic,nrf-spim";
+    status = "okay";
+
+    pinctrl-0 = <&spi3_default>;
+    pinctrl-1 = <&spi3_sleep>;
+    pinctrl-names = "default", "sleep";
+
+    led_strip: ws2812@0 {
+        compatible = "worldsemi,ws2812-spi";
+
+        /* SPI */
+        reg = <0>; /* ignored, but necessary for SPI bindings */
+        spi-max-frequency = <8000000>; /* 8 MHz for strict SK6812 timing */
+
+        /* WS2812 */
+        chain-length = <68>; /* Full board of 68 LEDs */
+        spi-one-frame = <0x7C>; /* 5 highs, 3 lows -> 625ns high */
+        spi-zero-frame = <0x60>; /* 2 highs, 6 lows -> 250ns high */
+        color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
+    };
+};
+
+&vbatt {
+    status = "disabled";
+};
 
 / {
     chosen {
         zmk,physical-layout = &default_layout;
+        zmk,underglow = &led_strip;
+        zmk,ext-power = &vcc_power;
+        /delete-property/ zmk,battery;
     };
+
+    vcc_power: ext-power {
+        compatible = "zmk,ext-power-generic";
+        control-gpios = <&gpio1 5 GPIO_ACTIVE_HIGH>; // D18 (P1.05) - HIGH for TPS61023 EN pin
+        init-delay-ms = <50>;
+    };
+
 
     kscan: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
         wakeup-source;
 
-        // 📝 9 COLUMN PINS (0-indexed: Col 1 to 9 from KiCad become 0 to 8)
-        // CHANGE THESE pin assignments to match your exact KiCad schematic!
+        // 📝 9 COLUMN PINS (Col 1 to 9 mapped to actual GPIOs from schematic)
         col-gpios
-            = <&xiao_d 8  GPIO_ACTIVE_HIGH>
-            , <&xiao_d 9  GPIO_ACTIVE_HIGH>
-            , <&xiao_d 10 GPIO_ACTIVE_HIGH>
-            , <&xiao_d 11  GPIO_ACTIVE_HIGH>  // Extra pad example
-            , <&xiao_d 12  GPIO_ACTIVE_HIGH>  // Extra pad example
-            , <&xiao_d 13 GPIO_ACTIVE_HIGH>  // Extra pad example
-            , <&xiao_d 14 GPIO_ACTIVE_HIGH>  // Extra pad example
-            , <&xiao_d 15 GPIO_ACTIVE_HIGH>  // Extra pad example
-            , <&xiao_d 16  GPIO_ACTIVE_HIGH>  // Extra pad example
+            = <&gpio1 13 GPIO_ACTIVE_HIGH> // col 1 (D8)
+            , <&gpio1 14 GPIO_ACTIVE_HIGH> // col 2 (D9)
+            , <&gpio1 15 GPIO_ACTIVE_HIGH> // col 3 (D10)
+            , <&gpio0 15 GPIO_ACTIVE_HIGH> // col 4 (D11)
+            , <&gpio0 19 GPIO_ACTIVE_HIGH> // col 5 (D12)
+            , <&gpio1 1  GPIO_ACTIVE_HIGH> // col 6 (D13)
+            , <&gpio0 9  GPIO_ACTIVE_HIGH> // col 7 (D14)
+            , <&gpio0 10 GPIO_ACTIVE_HIGH> // col 8 (D15)
+            , <&gpio0 31 GPIO_ACTIVE_HIGH> // col 9 (D16 / P0.31)
             ;
 
-        // 📝 8 ROW PINS (0-indexed: Row 1 to 8 from KiCad become 0 to 7)
-        // CHANGE THESE pin assignments to match your exact KiCad schematic!
+        // 📝 8 ROW PINS (Row 1 to 8 mapped to actual GPIOs from schematic)
         row-gpios
-            = <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // KiCad Row 1
-            , <&xiao_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // KiCad Row 2
-            , <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // KiCad Row 3
-            , <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // KiCad Row 4
-            , <&xiao_d 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // KiCad Row 5
-            , <&xiao_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // KiCad Row 6
-            , <&xiao_d 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // KiCad Row 7
-            , <&xiao_d 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // KiCad Row 8
+            = <&gpio0 2  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row 1 (D0)
+            , <&gpio0 3  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row 2 (D1)
+            , <&gpio0 28 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row 3 (D2)
+            , <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row 4 (D3)
+            , <&gpio0 4  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row 5 (D4)
+            , <&gpio0 5  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row 6 (D5)
+            , <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row 7 (D6)
+            , <&gpio1 12 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row 8 (D7)
             ;
     };
 
     default_transform: default_transform {
         compatible = "zmk,matrix-transform";
-        columns = <9>; // Expanded to your 9 columns
-        rows = <8>;    // Expanded to your 8 rows
+        columns = <9>; 
+        rows = <8>;    
 
-        // This maps your 68 physical layout locations sequentially across the 8x9 grid
+        // Physical to electrical mapping (68 keys)
         map = <
-            RC(0,0) RC(0,1) RC(0,2) RC(0,3) RC(0,4) RC(0,5) RC(0,6) RC(0,7) RC(0,8) 
-            RC(1,0) RC(1,1) RC(1,2) RC(1,3) RC(1,4) RC(1,5) RC(1,6) RC(1,7) RC(1,8) 
-            RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5) RC(2,6) RC(2,7) RC(2,8) 
-            RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(3,6) RC(3,7) RC(3,8) 
-            RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(4,5) RC(4,6) RC(4,7) RC(4,8) 
-            RC(5,0) RC(5,1) RC(5,2) RC(5,3) RC(5,4) RC(5,5) RC(5,6) RC(5,7) RC(5,8) 
-            RC(6,0) RC(6,1) RC(6,2) RC(6,3) RC(6,4) RC(6,5) RC(6,6) RC(6,7) RC(6,8) 
-            RC(7,0) RC(7,1) RC(7,2) RC(7,3) RC(7,4)
+            RC(0,0) RC(0,1) RC(0,2) RC(0,3) RC(0,4) RC(0,5) RC(0,6) RC(0,7) RC(0,8) RC(1,0) RC(1,1) RC(1,2) RC(1,3) RC(1,4) RC(1,5)
+            RC(1,6) RC(1,7) RC(1,8) RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5) RC(2,6) RC(2,7) RC(2,8) RC(3,0) RC(3,1) RC(3,2)
+            RC(3,3) RC(3,4) RC(3,5) RC(3,6) RC(3,7) RC(3,8) RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(4,5)         RC(4,6) RC(4,7)
+            RC(4,8)         RC(5,0) RC(5,1) RC(5,2) RC(5,3) RC(5,4) RC(5,5) RC(5,6) RC(5,7) RC(5,8) RC(6,0) RC(6,1) RC(6,2) RC(6,3)
+            RC(6,4) RC(6,5) RC(6,6)                 RC(6,7)                 RC(6,8) RC(7,0) RC(7,1) RC(7,2) RC(7,3) RC(7,4)
         >;
     };
-};
+};      
