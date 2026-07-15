@@ -42,6 +42,11 @@ the base of the keyboard. i wanted it look premium so i made the thick bezels, u
 
 this all together looks with brown and black keys. maybe i will change it later if i want 
 
+the completed build with gengar themed keys:
+<img width="1600" height="902" alt="WhatsApp Image 2026-07-14 at 11 50 19 PM" src="https://github.com/user-attachments/assets/7d21d6b1-261a-4bd0-b411-c892abebc196" />
+<img width="1600" height="902" alt="WhatsApp Image 2026-07-14 at 11 50 19 PM" src="https://github.com/user-attachments/assets/36cc6da1-3b50-49d6-86e0-0a0f17fd4468" />
+
+
 
 <img width="600" height="270" alt="bin" src="https://github.com/user-attachments/assets/b14b8486-c884-4fdb-9701-98f75ac60404" />
 <img width="668" height="302" alt="pcb" src="https://github.com/user-attachments/assets/766a61a6-694c-4d09-bc08-58968237c306" />
