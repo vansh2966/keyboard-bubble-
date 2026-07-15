@@ -1,4 +1,4 @@
-<img width="1131" height="1600" alt="WhatsApp Image 2026-06-06 at 9 36 12 PM" src="https://github.com/user-attachments/assets/d1d9eaa0-5a79-4b7f-962c-fbaf55f8932c" />
+<img width="1054" height="1492" alt="w" src="https://github.com/user-attachments/assets/a6b10805-186b-4e18-8e67-3e9a4ac043a4" />
 
 
 **Zine page is not AI, keyboard image is rendered, PCB image is SS, but i changed it color. i have eveything myself in canva. no AI**
