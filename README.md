@@ -1,6 +1,3 @@
-<img width="1054" height="1492" alt="w" src="https://github.com/user-attachments/assets/a6b10805-186b-4e18-8e67-3e9a4ac043a4" />
-
-
 
 well story behind is that i was always wanted mechanical keyboards, that cool looking keyboards with crazy 
 lighting effects and keycaps. so i thought why not make one myself, i will learn lot new things, desgin my first PCB and also get myself my own custom keyboard. so started it, did some research, components 
